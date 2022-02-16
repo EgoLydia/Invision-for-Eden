@@ -325,6 +325,10 @@ p {
   align-items: flex-end;
 }
 
+.modal-content-wrapper {
+  display: none;
+}
+
 .modal-content{
  width: 100%;
 }
@@ -367,6 +371,8 @@ p {
 .food-item{
   display: flex;
   padding-top: 30px;
+  transform: translateY(-35px);
+  animation: slideDown 0.5s ease-out 0.4s forwards;
 }
 
 .food-img{
@@ -400,4 +406,11 @@ p {
   border-radius: 100px;
   background-color: #000;
 
+}
+
+@keyframes slideDown {
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

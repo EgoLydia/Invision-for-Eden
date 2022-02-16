@@ -1,12 +1,13 @@
 const viewMeal = document.getElementById("viewMeal");
 const modal = document.getElementById("modal");
+const modalContent = document.getElementById("modal-content")
 const closeBtn = document.getElementById("close");
 
 viewMeal.addEventListener('click', onViewMealClick);
 closeBtn.addEventListener('click', closeModal);
 
 function toggleExpansion(element, to, duration) {
-    return new Promise(res => {
+    return new Promise((resolve) => {
         requestAnimationFrame(() => {
             element.style.transition = `
             width ${duration} ease-in-out,
@@ -21,19 +22,24 @@ function toggleExpansion(element, to, duration) {
             element.style.height = to.height;
         });
         
-         setTimeout(res, duration)
+         setTimeout(resolve, 1000)
     });
 };
 
-async function fadeContent(element, duration = 300){
-    return new Promise(res => {
-        [...element.children].forEach((child) => {
-            requestAnimationFrame(() => {
-                child.style.transition = `opacity ${duration}ms linear`;
-                child.style.opacity = '0';
-            });
-        })
-        setTimeout(res, duration);
+function fadeContent(element, duration){
+    return new Promise((res) => {
+        requestAnimationFrame(() => {
+            const title = element.children[0].children[0];
+            title.style.transition = `all ${duration}ms ease-in-out`;
+            title.className = 'modal-text'
+            title.innerText = "Todays's Meals"
+
+            const close = element.children[0].children[1];
+            close.style.transition = `all ${duration}ms ease-in-out`;
+            close.className = 'close'
+            close.innerHTML = `<img class="close-icon" src="img/close.png" alt="icon">`
+        });
+        setTimeout(res, parseInt(duration));
     })
 }
 
@@ -56,7 +62,7 @@ async function onViewMealClick(e) {
     const height = rect.height;
 
     viewMealCardClone.style.position = 'absolute';
-    viewMealCardClone.style.top = top + 'px';
+    viewMealCardClone.style.top =  197 + 'px';
     viewMealCardClone.style.left = 28 + 'px';
     viewMealCardClone.style.width = width + 'px';
     viewMealCardClone.style.height = height+ 'px';
@@ -65,10 +71,14 @@ async function onViewMealClick(e) {
     viewMealCard.style.opacity = '0';
     viewMealCard.parentNode.appendChild(viewMealCardClone);
 
-    //fadeContent(viewMealCardClone);
     openModal();
-    toggleExpansion(viewMealCardClone, {top: `${54}px`, left: `${0}px`, width: `${width + 56}px`, height:`${91}%`}, '0.7s');
-    
+    fadeContent(viewMealCardClone, 1000)
+
+    viewMealCardClone.style.display = 'block'
+    viewMealCardClone.style.padding = '0'
+    viewMealCardClone.style.overflow = 'hidden'
+    viewMealCardClone.appendChild(modalContent)
+    await toggleExpansion(viewMealCardClone, {top: `${100}px`, left: `${0}px`, width: `${width + 56}px`, height:`${93}%`}, '0.7s')
 }
 
 function closeModal(){
