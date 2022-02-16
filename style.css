@@ -1,14 +1,30 @@
-body{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
 }
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
-.wrapper{
-    width: 375px;
-    padding-left: 28px;
-    padding-right: 28px;
+.wrapper {
+  position: relative;
+  width: 375px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: rgba(244, 244, 244, 0.75);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /* padding: 10px 0px 20px 30px ; */
+}
+.content {
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .profile-wrapper {
@@ -55,7 +71,7 @@ p{
 
 .settings {
   border-radius: 13px;
-  background-color: rgba(255,157,0,0.05);
+  background-color: rgba(255, 157, 0, 0.05);
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.04);
   color: #e78f00;
   font-family: "Cerebri Sans";
@@ -66,54 +82,54 @@ p{
   padding: 5px 12px;
 }
 
-.account-wrapper{
-    display: flex;
-    width: 100%;
-    margin-top: 24px;
+.account-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 24px;
 }
 
-.account{
-    padding: 12px 15px;
-    background-color:  rgba(0,194,103,0.1);;
-    color: #1B1B1B;
-    font-family: "Cerebri Sans";
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
-    border-radius: 6px 0 0 6px;
-    flex-grow: 1;
+.account {
+  padding: 12px 15px;
+  background-color: rgba(0, 194, 103, 0.1);
+  color: #1b1b1b;
+  font-family: "Cerebri Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  border-radius: 6px 0 0 6px;
+  flex-grow: 1;
 }
 
-.pay-this{
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #FFF;
-    font-family: "Cerebri Sans";
-    background-color: #00C267;
-    text-align: center;
-    border-radius: 0 6px 6px 0;
+.pay-this {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  font-family: "Cerebri Sans";
+  background-color: #00c267;
+  text-align: center;
+  border-radius: 0 6px 6px 0;
 }
 
-.old-price{
-    padding-top: 11px;
-    font-size: 14px;
-    line-height: 17px;
-    text-decoration: line-through;
+.old-price {
+  padding-top: 11px;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: line-through;
 }
 
-.current-price{
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
+.current-price {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
 }
 
-.meal-plan{
-    display: flex;
-    margin-top: 20px;
+.meal-plan {
+  display: flex;
+  margin-top: 20px;
 }
 
-.meal{
-  color: rgba(27,27,27,1);
+.meal {
+  color: rgba(27, 27, 27, 1);
   font-family: "Cerebri Sans";
   font-size: 14px;
   font-weight: 300;
@@ -122,13 +138,13 @@ p{
   padding-right: 0px;
   flex-grow: 1;
   border-radius: 6px 0 0 6px;
-  background-color: rgba(249,245,225,1);
+  background-color: rgba(249, 245, 225, 1);
 }
 
-.view-meal{
+.view-meal {
   border-radius: 0 6px 6px 0;
-  background-color: rgba(255,190,86,1);
-  color: rgba(255,255,255,1);
+  background-color: rgba(255, 190, 86, 1);
+  color: rgba(255, 255, 255, 1);
   font-family: "Cerebri Sans";
   font-size: 14px;
   font-weight: 600;
@@ -137,78 +153,79 @@ p{
   text-align: center;
 }
 
-.take-action{
-    margin-top: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-bottom: 32px;
-    display: flex;
-}
-
-.call-action-icon{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    border-radius: 100%;
-    background-color: rgba(190,164,255,0.7);
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
-}
-
-.video-action-icon{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    border-radius: 100%;
-    background-color: rgba(255,146,101,0.7);
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
-}
-
-.video-icon{
-    height: 14px;
-    width: 14px;
-}
-
-.do-it{
-    display: flex;
-    text-decoration: underline;
-    align-items: center;
-    color: rgba(138,92,255,1);
-  font-family: "Cerebri Sans";
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.play-video{
-    display: flex;
-    text-decoration: underline;
-    align-items: center;
-    color: rgba(255,146,101,0.7);
-  font-family: "Cerebri Sans";
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.get-started{
-    padding: 20px;
-    border-radius: 6px;
-  background-color: rgba(207,236,255,0.5);
+.take-action {
   margin-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 32px;
+  display: flex;
 }
 
-.get-started-title{
-    color: rgba(18,18,18,1);
+.call-action-icon {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgba(190, 164, 255, 0.7);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.video-action-icon {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgba(255, 146, 101, 0.7);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.video-icon {
+  height: 14px;
+  width: 14px;
+}
+
+.do-it {
+  display: flex;
+  text-decoration: underline;
+  align-items: center;
+  color: rgba(138, 92, 255, 1);
+  font-family: "Cerebri Sans";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.play-video {
+  display: flex;
+  text-decoration: underline;
+  align-items: center;
+  color: rgba(255, 146, 101, 0.7);
+  font-family: "Cerebri Sans";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.get-started {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgba(207, 236, 255, 0.5);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.get-started-title {
+  color: rgba(18, 18, 18, 1);
   font-family: "PT Serif";
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
 }
 
-.get-started-subtitle{
-    color: rgba(56,56,56,1);
+.get-started-subtitle {
+  color: rgba(56, 56, 56, 1);
   font-family: "Cerebri Sans";
   font-size: 14px;
   font-weight: 300;
@@ -216,17 +233,85 @@ p{
   margin-top: 5px;
 }
 
-.arrow-icon{
-    height: 9px;
- width: 14px;
- margin-left: 7px;
+.arrow-icon {
+  height: 9px;
+  width: 14px;
+  margin-left: 7px;
 }
 
-.call{
-    color: rgba(56,56,56,1);
+.call {
+  color: rgba(56, 56, 56, 1);
   font-family: "Cerebri Sans";
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+
+.day {
+  color: #00c267;
+  font-family: "PT Serif";
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+.appointment {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  color: #333;
+  font-family: "Cerebri Sans";
+  font-size: 12px;
+  line-height: 15px;
+  width: 68px;
+  margin-right: 10px;
+}
+
+.reminder {
+  color: #121212;
+  font-family: "Cerebri Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19px;
+  border-radius: 10px;
+  background-color: #cfecff;
+  padding: 13px 4px 13px 15px;
+}
+
+.done {
+  margin-top: 12px;
+}
+
+.calendar {
+  height: 20px;
+  width: 18px;
+}
+
+.history {
+  height: 19px;
+  width: 20px;
+}
+.notify {
+  height: 20px;
+  width: 17px;
+}
+.chat {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-text {
+  color: #303030;
+  font-family: "Cerebri Sans";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
