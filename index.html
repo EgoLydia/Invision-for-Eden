@@ -41,7 +41,7 @@
                 <p class="current-price">Pay N62,800</p>
               </div>
             </div>
-            <div class="meal-plan">
+            <div id="viewMeal" class="meal-plan">
               <div class="meal">
                 <p>View your meals for the week</p>
               </div>
@@ -120,66 +120,67 @@
                 <p class="footer-text">Chat</p>
             </div>
         </div>
-        <div class="modal">
-            <div class="modal-content">
-                <div class="modal-title">
-                    <div class="modal-text">
-                        <p>Today's Meals</p>
+        <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-title">
+                        <div class="modal-text">
+                            <p>Today's Meals</p>
+                        </div>
+                        <div id="close" class="close">
+                            <img class="close-icon" src="img/close.png" alt="icon">
+                        </div>
                     </div>
-                    <div class="close">
-                        <img class="close-icon" src="img/close.png" alt="icon">
-                    </div>
+                        <div class="modal-body">
+                            <div class="food-item">
+                                <img class="food-img" src="img/akara&pap.png" alt="food">
+                                <div>
+                                    <p class="food-title">Akara & Pap</p>
+                                    <p class="food-class">Carbohydrate</p>
+                                </div>
+                            </div>
+                            <div class="food-item">
+                                <img class="food-img" src="img/Rice.png" alt="food">
+                                <div>
+                                    <p class="food-title">Jollof Rice</p>
+                                    <p class="food-class">Protein</p>
+                                </div>
+                            </div>
+                            <div class="food-item">
+                                <img class="food-img" src="img/Gastonton.png" alt="food">
+                                <div>
+                                    <p class="food-title">Gastonton</p>
+                                    <p class="food-class">Carbohydrate</p>
+                                </div>
+                            </div>
+                            <div class="food-item">
+                                <img class="food-img" src="img/port D.png" alt="food">
+                                <div>
+                                    <p class="food-title">Port Domenic</p>
+                                    <p class="food-class">Carbohydrate</p>
+                                </div>
+                            </div>
+                            <div class="food-item">
+                                <img class="food-img" src="img/Carlee.png" alt="food">
+                                <div>
+                                    <p class="food-title">Carleeville</p>
+                                    <p class="food-class">Fat $ Oils</p>
+                                </div>
+                            </div>
+                            <div class="food-item">
+                                <img class="food-img" src="img/cheslev.png" alt="food">
+                                <div>
+                                    <p class="food-title">South Chesleyton</p>
+                                    <p class="food-class">Vegetable</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="home-indicator">
+                            </div>                
+                         </div>
                 </div>
-                <div class="modal-body">
-                    <div class="food-item">
-                        <img class="food-img" src="img/akara&pap.png" alt="food">
-                        <div>
-                            <p class="food-title">Akara & Pap</p>
-                            <p class="food-class">Carbohydrate</p>
-                        </div>
-                    </div>
-                    <div class="food-item">
-                        <img class="food-img" src="img/Rice.png" alt="food">
-                        <div>
-                            <p class="food-title">Jollof Rice</p>
-                            <p class="food-class">Protein</p>
-                        </div>
-                    </div>
-                    <div class="food-item">
-                        <img class="food-img" src="img/Gastonton.png" alt="food">
-                        <div>
-                            <p class="food-title">Gastonton</p>
-                            <p class="food-class">Carbohydrate</p>
-                        </div>
-                    </div>
-                    <div class="food-item">
-                        <img class="food-img" src="img/port D.png" alt="food">
-                        <div>
-                            <p class="food-title">Port Domenic</p>
-                            <p class="food-class">Carbohydrate</p>
-                        </div>
-                    </div>
-                    <div class="food-item">
-                        <img class="food-img" src="img/Carlee.png" alt="food">
-                        <div>
-                            <p class="food-title">Carleeville</p>
-                            <p class="food-class">Fat $ Oils</p>
-                        </div>
-                    </div>
-                    <div class="food-item">
-                        <img class="food-img" src="img/cheslev.png" alt="food">
-                        <div>
-                            <p class="food-title">South Chesleyton</p>
-                            <p class="food-class">Vegetable</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="home-indicator">
-                    </div>                
-                 </div>
-            </div>
         </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

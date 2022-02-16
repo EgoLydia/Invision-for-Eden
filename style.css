@@ -322,12 +322,12 @@ p {
   background-color: rgba(0,0,0,0.9);
   height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
  align-items: flex-end;
 }
 
 .modal-content{
-  width: 100%;
+ width: 100%;
 }
 
 .modal-title{
