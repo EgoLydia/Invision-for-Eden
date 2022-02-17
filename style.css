@@ -1,38 +1,32 @@
 body {
-  max-height: 100vh;
   display: flex;
   justify-content: center;
-  overflow: auto;
 }
 p {
   margin: 0;
 }
 .wrapper {
-  max-height: 100%;
   position: relative;
   width: 375px;
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
   display: flex;
-  width: 100%;
+  width: 375px;
   justify-content: space-evenly;
   background-color: rgba(244, 244, 244, 0.75);
   padding-top: 10px;
   padding-bottom: 20px;
 }
 .content {
-  max-height: 100%;
-  overflow-y: auto;
   padding-left: 28px;
   padding-right: 28px;
 }
 
 .profile-wrapper {
-  padding-top: 25px;
+  padding-top: 15px;
   display: flex;
   align-items: center;
 }

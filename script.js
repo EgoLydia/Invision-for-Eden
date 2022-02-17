@@ -13,7 +13,7 @@ async function onViewMealClick(e) {
     const height = rect.height;
 
     viewMealCardClone.style.position = 'absolute';
-    viewMealCardClone.style.top =  top + 'px';
+    viewMealCardClone.style.top =  197 + 'px';
     viewMealCardClone.style.left = 28 + 'px';
     viewMealCardClone.style.width = width + 'px';
     viewMealCardClone.style.height = height+ 'px';
@@ -30,7 +30,7 @@ async function onViewMealClick(e) {
         viewMealCard.style.removeProperty('opacity');
         fadeClone(viewMealCardClone, '0');
         closeModal()
-        await toggleExpansion(viewMealCardClone, {top: `${top}px`, left: `${28}px`, width: `${width}px`, height: `${height}px`}, '0.7s')
+        await toggleExpansion(viewMealCardClone, {top: `${200}px`, left: `${28}px`, width: `${width}px`, height: `${height}px`}, '0.7s')
         viewMealCardClone.remove();
     })
 
@@ -38,7 +38,7 @@ async function onViewMealClick(e) {
     viewMealCardClone.style.padding = '0'
     viewMealCardClone.style.overflow = 'hidden'
     viewMealCardClone.appendChild(modalContentClone)
-    await toggleExpansion(viewMealCardClone, {top: `${70}px`, left: `${0}px`, width: `${100}%`, height:`${100}%`}, '0.7s')
+    await toggleExpansion(viewMealCardClone, {top: `${98}px`, left: `${0}px`, width: `${width + 56}px`, height:`${89}%`}, '0.7s')
 }
 
 function toggleExpansion(element, to, duration) {
