@@ -7,6 +7,7 @@ p {
   margin: 0;
 }
 .wrapper {
+  max-height: 100vh;
   position: relative;
   width: 375px;
 }
@@ -23,7 +24,7 @@ p {
   padding-bottom: 20px;
 }
 .content {
-  max-height: 100vh;
+  max-height: 100%;
   overflow-y: auto;
   padding-left: 28px;
   padding-right: 28px;
