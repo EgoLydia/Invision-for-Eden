@@ -38,7 +38,7 @@ async function onViewMealClick(e) {
     viewMealCardClone.style.padding = '0'
     viewMealCardClone.style.overflow = 'hidden'
     viewMealCardClone.appendChild(modalContentClone)
-    await toggleExpansion(viewMealCardClone, {top: `${98}px`, left: `${0}px`, width: `${width + 56}px`, height:`${89}%`}, '0.7s')
+    toggleExpansion(viewMealCardClone, {top: `${120}px`, left: `${0}px`, width: `${width + 56}px`, height:`${89}%`}, '0.7s')
 }
 
 function toggleExpansion(element, to, duration) {
