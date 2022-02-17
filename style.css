@@ -415,3 +415,19 @@ p {
     opacity: 1;
   }
 }
+
+.food-item-modal {
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  z-index: 100;
+}
+
+.expanded-food-item {
+  width: 100%;
+}
